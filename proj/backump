@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Haks words</title>
+	<style>
+		html, body{
+			text-align:center; 
+			margin:0 auto; 
+			width:100%;
+			padding-top:10px;
+			font-family:sans-serif;
+			-webkit-text-size-adjust:100%;
+			-ms-text-size-adjust:100%;
+			
+			
+			background-color:rgba(0,170,238,1);
+			
+		
+			background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+			background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+			background-image: -o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+			background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+			
+			-webkit-background-size: 50px 50px;
+			-moz-background-size: 50px 50px;
+			background-size: 50px 50px;	
+			
+			
+			
+		}
+		
+		
+		nav, aside, article {
+			background-color:rgba(255,255,255,0.85);
+		}
+		
+		nav {
+			
+			max-width:1200px; 
+			margin:auto; 
+			min-width:540px;
+			border-radius:25px;
+			padding:1%; 
+			width:100%;
+			color:gray;
+		}
+		nav li{
+			display:inline;
+			padding:1%;
+		}
+		nav div{
+			display:inline-block;
+		}
+		nav ul{
+			display:inline;
+			padding:1%;
+		}
+	
+		nav div ul li, nav div ul li a {
+			font-size:95%;
+			text-decoration:none;
+			color:#0B3861;
+		}
+		footer{ padding-top:10px; font-size:10px; color:white;}
+		#option{
+			border-color:red;
+			color:brown;
+			
+		}
+		#option div{
+			text-align:left;
+			font-size:95%;
+		}
+		#option div input{
+			margin-right:10px;
+		}
+		article {
+		
+			max-width:1200px; 
+			margin:auto; 
+			min-width:540px;
+			border-radius:25px;
+			padding:1%; 
+			width:100%;
+			color:green;
+			margin-top:10px;
+			margin-bottom:10px;
+		}
+		aside {
+			
+			max-width:1200px; 
+			margin:auto; 
+			min-width:540px;
+			border-radius:25px;
+			padding:1%; 
+			width:100%;
+			color:#8A4B08;
+			margin-top:10px;
+			margin-bottom:10px;
+			
+		}
+		aside#searcha{
+			display:none;
+		}
+		aside input#search{
+			color:#610B0B;
+			border:1px solid #0ae;
+			padding:5px;
+			width:80%;
+			border-radius:5px;
+		}
+		aside input#searchEnter{
+			color:#0ae;
+			border:1px solid #0ae;
+			padding:5px;
+			width:15%;
+			border-radius:5px;
+			background-color:white;
+		}
+		
+		div#word {
+			font-weight:bold;
+			font-size:35px;
+			padding-top:3%;
+			
+		}
+		div#description{
+			color:#0ae;
+			font-size:16px;
+			padding-top:1%;
+		}
+		div#speaking{
+			color:red;
+			font-size:16px;
+			padding-top:5%;
+		}
+		div#translate{
+			color:brown;
+			font-weight:bold;
+			font-size:25px;
+			padding-top:5%;
+		}
+		
+		#progressbar {
+			width:50%;
+			margin:auto;
+		  	background-color: black;
+		  	border-radius: 13px; 
+		  	padding: 3px;
+		 	margin-top:5%;
+		}
+		
+		#progressbar > div {
+		   background-color: green;
+		   color:white;
+		   font-size:12px;
+		   line-height:20px;
+		   width: 40%; /* Adjust with JavaScript */
+		   height: 20px;
+		   border-radius: 10px;
+		}
+
+
+		#progressbar2 {
+			width:50%;
+			margin:auto;
+		  	background-color: black;
+		  	border-radius: 13px; 
+		  	padding: 3px;
+		 	margin-top:2%;
+		}
+		
+		#progressbar2 > div {
+		   background-color: green;
+		   color:white;
+		   font-size:12px;
+		   line-height:20px;
+		   width: 70%; /* Adjust with JavaScript */
+		   height: 20px;
+		   border-radius: 10px;
+		}
+		
+	</style>
+	<script>
+	function showsearcher(){
+		if(document.getElementById("searcha").style.display=="none")
+			document.getElementById("searcha").style.display="block";
+		else
+			document.getElementById("searcha").style.display="none";
+	}
+	
+	</script>
+</head>
+<body>
+<nav>
+	<div style="width:8%">
+		<ul>
+			<li><a href="#"><strong>Haks.pl</strong></a></li>
+		</ul>
+	</div>
+	<div style="width:65%">
+		<ul>
+			<li>all: <strong>1233</strong></li>
+			<li>new: <strong>234</strong></li>
+			<li>know: <strong>453</strong></li>
+			<li>im: <strong>453</strong></li>
+		</ul>
+	</div>
+	<div style="width:25%">
+		<ul>
+			<li><a href="#">dodaj</a></li>
+			<li><a href="#" onclick='showsearcher();'>szukaj</a></li>
+			
+		</ul>	
+	</div>
+</nav>
+<aside id="searcha">
+	<input type="text" name="nazwa" id="search" value="" placeholder="szukaj..."/>
+	<input type="submit" id="searchEnter" value="Szukaj" />
+</aside>
+
+<article>
+	<div id="word">regarded</div>
+	<div id="description">w czasie przeszłym</div>
+	<div id="speaking">--- rigarder ---</div>
+	<div id="translate">traktowany</div>
+
+<div id="progressbar">
+  <div>% do stanu nauczenia</div>
+</div>
+<div id="progressbar2">
+  <div>% do stanu nauczenia</div>
+</div>
+
+
+<br><br>
+	poprawnie / zle<br> 
+	w druga strone poprawnie / zle<br>
+	progres bar<br>
+	pokaz<br>
+	poprawnie<br>
+	zle
+</article>
+<nav id="option">
+	<div style="width:32%;">
+		<input type="checkbox" name="nazwa" value="wartość" checked="checked" />Wszystkie<br>
+		<input type="checkbox" name="nazwa" value="wartość" checked="checked" />Ważne <br>
+		<input type="checkbox" name="nazwa" value="wartość" checked="checked" />Nowe
+	</div>
+	<div style="width:32%;">
+		<input type="checkbox" name="nazwa" value="wartość" checked="checked" />Wszystkie<br>
+		<input type="checkbox" name="nazwa" value="wartość" checked="checked" />Nauczone<br>
+		<input type="checkbox" name="nazwa" value="wartość" checked="checked" />Nienauczone
+	</div>
+	<div style="width:32%;">
+		<input type="checkbox" name="nazwa" value="wartość" checked="checked" />Wszystkie<br>
+		<input type="checkbox" name="nazwa" value="wartość" checked="checked" />Na polski<br>
+		<input type="checkbox" name="nazwa" value="wartość" checked="checked" />Na angielski
+	</div>
+</nav>
+<footer> Copyright Paweł Czubak 2014 </footer>
+</body>
+</html>
